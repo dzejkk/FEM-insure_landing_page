@@ -4,11 +4,56 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
-    <link href="/src/style.css" rel="stylesheet">
+    <link href="/src/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <div id="app" class="text-3xl font-bold underline">Hello</div>
-    <script type="module" src="/src/main.js"></script>
+  <body class="bg-Very-Light-Gray">
+    <header class="px-6">
+      <div class="container mx-auto h-16 md
+                  flex flex-row items-center justify-between">
+        <div class="">
+          <img src="/public/images/logo.svg" alt="logo"/>
+        </div>
+        <nav>
+          <ul class="flex flex-row items-center justify-between gap-2.5 font-bold">
+            <li class="cursor-pointer">How we work</li>
+            <li class="cursor-pointer">Product</li>
+            <li class="cursor-pointer">Company</li>
+            <li class="cursor-pointer">Contact</li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+  <section>
+    <div class="mx-auto h-[80dvh] bg-dark-violet">
+      <div class="container mx-auto flex justify-center items-center">
+        <div class="text-white w-1/2">
+          <h1 class="text-5xl text-white">Humanizing your insurance.</h1>
+          <p> Get your life insurance coverage easier and faster.
+            We blend our expertise and technology to help you find
+            the plan that’s right for you. Ensure you and your
+            loved ones are protected.
+          </p>
+          <button>View plans</button>
+        </div>
+        <div class="text-white w-1/2">
+          <img src="/public/images/image-intro-desktop.jpg" alt="insurance"/>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+
   </body>
 </html>
-
