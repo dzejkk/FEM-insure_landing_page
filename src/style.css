@@ -1,7 +1,6 @@
 @import "tailwindcss";
 
 @theme {
-
   --font-karla: "Karla", serif;
   --font-DM: "DM Serif Display", serif;
 
@@ -10,20 +9,17 @@
   --color-dark-violet: hsl(256, 26%, 20%);
   --color-Grayish-Blue: hsl(216, 30%, 68%);
 
-
-
   --color-Very-Dark-Violet: hsl(270, 9%, 17%);
   --color-Dark-Grayish-Violet: hsl(273, 4%, 51%);
   --color-Very-Light-Gray: hsl(0, 0%, 98%);
 
-
   /*layout*/
 
   --breakpoint-2xl: 90rem;
-
-
 }
 
+
+/*CUSTOM CLASSES FOR ELEMENTS */
 
 .button {
   @apply cursor-pointer py-2 px-6 text-Very-Light-Gray bg-dark-violet font-bold uppercase
@@ -37,3 +33,4 @@
   focus:outline-2 focus:bg-Very-Light-Gray
   focus:text-Very-Dark-Violet active:outline-Very-Dark-Violet transition;
 }
+

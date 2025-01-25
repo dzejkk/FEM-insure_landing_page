@@ -21,7 +21,7 @@
 
   <!--START---------------------------------------------------------->
 
-  <body class="bg-Very-Light-Gray font-karla">
+  <body class="bg-Very-Light-Gray font-karla overflow-x-hidden">
     <header class="px-6 bg-Very-Light-Gray relative z-30">
       <div
         class="container mx-auto h-18 md flex flex-row items-center justify-between"
@@ -33,10 +33,18 @@
           <ul
             class="flex flex-row items-center justify-between gap-3.5 font-bold"
           >
-            <li class="cursor-pointer"><a class="nav-links" href="/#">How we work</a></li>
-            <li class="cursor-pointer"><a class="nav-links" href="/#">Product</a></li>
-            <li class="cursor-pointer"><a class="nav-links" href="/#">Company</a></li>
-            <li class="cursor-pointer"><a class="nav-links" href="/#">Contact</a></li>
+            <li class="cursor-pointer">
+              <a class="nav-links" href="/#">How we work</a>
+            </li>
+            <li class="cursor-pointer">
+              <a class="nav-links" href="/#">Product</a>
+            </li>
+            <li class="cursor-pointer">
+              <a class="nav-links" href="/#">Company</a>
+            </li>
+            <li class="cursor-pointer">
+              <a class="nav-links" href="/#">Contact</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -49,9 +57,7 @@
         >
           <!--Background  gaphic 1-->
           <span
-            class="absolute z-20 w-full h-full max-w-[2000px]
-             bg-[url(/public/images/bg-pattern-intro-right-mobile.svg)]
-              bg-no-repeat bg-[100%_20%] sm:bg-[url(/public/images/bg-pattern-intro-right-desktop.svg)]"
+            class="absolute z-20 w-full h-full max-w-[2000px] bg-[url(/public/images/bg-pattern-intro-right-mobile.svg)] bg-no-repeat bg-[100%_20%] sm:bg-[url(/public/images/bg-pattern-intro-right-desktop.svg)]"
           >
           </span>
           <!--Background  gaphic 1-->
@@ -75,6 +81,75 @@
               src="/public/images/image-intro-desktop.jpg"
               alt="insurance"
             />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="relative">
+
+      <span
+        class="absolute z-20 w-full h-full max-w-[2000px]
+        bg-[url(/public/images/bg-pattern-intro-right-mobile.svg)]
+         bg-no-repeat sm:bg-[url(/public/images/bg-pattern-intro-left-desktop.svg)] -translate-y-45"
+        ></span
+      >
+
+      <div class="h-112"></div>
+
+
+      <div class="min-h-dvh -mb-8">
+        <div class="container mx-auto">
+          <hr
+            class="w-30 -translate-y-24 text-Dark-Grayish-Violet border-none h-[2px] bg-Dark-Grayish-Violet"
+          />
+
+          <h2
+            class="2xl:text-7xl lg:text-6xl text-5xl text-Very-Dark-Violet mb-16 font-DM"
+          >
+            We're different
+          </h2>
+          <div class="grid grid-cols-1 gap-8 lg:grid-cols-[repeat(3,auto)]">
+            <div>
+              <div class="pe-4">
+                <img
+                  class="mb-10"
+                  src="/images/icon-snappy-process.svg"
+                  alt=""
+                />
+                <h3 class="text-4xl text-Very-Dark-Violet font-DM mb-4">
+                  Snappy Process
+                </h3>
+                <p>
+                  Our application process can be completed in minutes, not
+                  hours. Don’t get stuck filling in tedious forms.
+                </p>
+              </div>
+            </div>
+            <div class="px-4">
+              <img
+                class="mb-10"
+                src="/images/icon-affordable-prices.svg"
+                alt=""
+              />
+              <h3 class="text-4xl text-Very-Dark-Violet font-DM mb-4">
+                Affordable Prices
+              </h3>
+              <p>
+                We don’t want you worrying about high monthly costs. Our prices
+                may be low, but we still offer the best coverage possible.
+              </p>
+            </div>
+            <div class="px-4">
+              <img class="mb-10" src="/images/icon-people-first.svg" alt="" />
+              <h3 class="text-4xl text-Very-Dark-Violet font-DM mb-4">
+                People First
+              </h3>
+              <p>
+                Our plans aren’t full of conditions and clauses to prevent
+                payouts. We make sure you’re covered when you need it.
+              </p>
+            </div>
           </div>
         </div>
       </div>
