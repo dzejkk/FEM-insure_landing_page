@@ -18,22 +18,25 @@
       rel="stylesheet"
     />
   </head>
-  <body class="bg-Very-Light-Gray">
+
+  <!--START---------------------------------------------------------->
+
+  <body class="bg-Very-Light-Gray font-karla">
     <header class="px-6 bg-Very-Light-Gray relative z-30">
       <div
-        class="container mx-auto h-16 md flex flex-row items-center justify-between"
+        class="container mx-auto h-18 md flex flex-row items-center justify-between"
       >
         <div class="">
           <img src="/public/images/logo.svg" alt="logo" />
         </div>
         <nav>
           <ul
-            class="flex flex-row items-center justify-between gap-2.5 font-bold"
+            class="flex flex-row items-center justify-between gap-3.5 font-bold"
           >
-            <li class="cursor-pointer">How we work</li>
-            <li class="cursor-pointer">Product</li>
-            <li class="cursor-pointer">Company</li>
-            <li class="cursor-pointer">Contact</li>
+            <li class="cursor-pointer"><a class="nav-links" href="/#">How we work</a></li>
+            <li class="cursor-pointer"><a class="nav-links" href="/#">Product</a></li>
+            <li class="cursor-pointer"><a class="nav-links" href="/#">Company</a></li>
+            <li class="cursor-pointer"><a class="nav-links" href="/#">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -42,11 +45,11 @@
     <section>
       <div class="mx-auto h-[60dvh] bg-dark-violet">
         <div
-          class="overflow-visible container mx-auto flex justify-center items-center"
+          class="overflow-visible container mx-auto flex justify-between items-center"
         >
           <!--Background  gaphic 1-->
           <span
-            class="absolute z-20 w-full h-full
+            class="absolute z-20 w-full h-full max-w-[2000px]
              bg-[url(/public/images/bg-pattern-intro-right-mobile.svg)]
               bg-no-repeat bg-[100%_20%] sm:bg-[url(/public/images/bg-pattern-intro-right-desktop.svg)]"
           >
@@ -64,7 +67,7 @@
               expertise and technology to help you find the plan that’s right
               for you. Ensure you and your loved ones are protected.
             </p>
-            <button>View plans</button>
+            <button class="button relative z-50">View plans</button>
           </div>
           <div class="ext-white w-[45%] z-10">
             <img

@@ -23,3 +23,17 @@
 
 
 }
+
+
+.button {
+  @apply cursor-pointer py-2 px-6 text-Very-Light-Gray bg-dark-violet font-bold uppercase
+  text-sm font-karla border border-Very-Light-Gray
+  hover:bg-Very-Light-Gray hover:text-Very-Dark-Violet
+  transition;
+}
+
+.nav-links {
+  @apply py-2 px-2 hover:bg-Very-Dark-Violet hover:text-Very-Light-Gray
+  focus:outline-2 focus:bg-Very-Light-Gray
+  focus:text-Very-Dark-Violet active:outline-Very-Dark-Violet transition;
+}
