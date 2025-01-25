@@ -11,16 +11,25 @@
       href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body class="bg-Very-Light-Gray">
-    <header class="px-6 z-10">
-      <div class="container mx-auto h-16 md
-                  flex flex-row items-center justify-between">
+    <header class="px-6 bg-Very-Light-Gray relative z-30">
+      <div
+        class="container mx-auto h-16 md flex flex-row items-center justify-between"
+      >
         <div class="">
-          <img src="/public/images/logo.svg" alt="logo"/>
+          <img src="/public/images/logo.svg" alt="logo" />
         </div>
         <nav>
-          <ul class="flex flex-row items-center justify-between gap-2.5 font-bold">
+          <ul
+            class="flex flex-row items-center justify-between gap-2.5 font-bold"
+          >
             <li class="cursor-pointer">How we work</li>
             <li class="cursor-pointer">Product</li>
             <li class="cursor-pointer">Company</li>
@@ -30,30 +39,42 @@
       </div>
     </header>
 
-  <section>
-    <div class="mx-auto h-[60dvh] bg-dark-violet">
-      <div class=" container mx-auto flex justify-center items-center gap-3.5 bg-[url(/public/images/bg-pattern-intro-right-desktop.svg)] bg-no-repeat bg-right-top">
-        <div class="text-white w-1/2">
-          <h1 class="text-7xl text-white mb-8">Humanizing your insurance.</h1>
-          <p class="mb-8"> Get your life insurance coverage easier and faster.
-            We blend our expertise and technology to help you find
-            the plan that’s right for you. Ensure you and your
-            loved ones are protected.
-          </p>
-          <button>View plans</button>
-        </div>
-        <div class="ext-white w-1/2">
-          <img class="w-[100%] translate-y-20" src="/public/images/image-intro-desktop.jpg" alt="insurance"/>
-        </div>
+    <section>
+      <div class="mx-auto h-[60dvh] bg-dark-violet">
+        <div
+          class="overflow-visible container mx-auto flex justify-center items-center"
+        >
+          <!--Background  gaphic 1-->
+          <span
+            class="absolute z-20 w-full h-full
+             bg-[url(/public/images/bg-pattern-intro-right-mobile.svg)]
+              bg-no-repeat bg-[100%_20%] sm:bg-[url(/public/images/bg-pattern-intro-right-desktop.svg)]"
+          >
+          </span>
+          <!--Background  gaphic 1-->
 
+          <div class="text-white w-1/2">
+            <h1
+              class="2xl:text-7xl lg:text-6xl text-5xl text-white mb-8 font-DM"
+            >
+              Humanizing your insurance.
+            </h1>
+            <p class="mb-8 w-96">
+              Get your life insurance coverage easier and faster. We blend our
+              expertise and technology to help you find the plan that’s right
+              for you. Ensure you and your loved ones are protected.
+            </p>
+            <button>View plans</button>
+          </div>
+          <div class="ext-white w-[45%] z-10">
+            <img
+              class="w-[100%] translate-y-20"
+              src="/public/images/image-intro-desktop.jpg"
+              alt="insurance"
+            />
+          </div>
+        </div>
       </div>
-    </div>
-
-  </section>
-
-
-
-
-
+    </section>
   </body>
 </html>

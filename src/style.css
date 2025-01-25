@@ -2,8 +2,11 @@
 
 @theme {
 
-  /*colors*/
   --font-karla: "Karla", serif;
+  --font-DM: "DM Serif Display", serif;
+
+  /*colors*/
+
   --color-dark-violet: hsl(256, 26%, 20%);
   --color-Grayish-Blue: hsl(216, 30%, 68%);
 
