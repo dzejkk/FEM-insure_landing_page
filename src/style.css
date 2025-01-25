@@ -31,6 +31,6 @@
 .nav-links {
   @apply py-2 px-2 hover:bg-Very-Dark-Violet hover:text-Very-Light-Gray
   focus:outline-2 focus:bg-Very-Light-Gray
-  focus:text-Very-Dark-Violet active:outline-Very-Dark-Violet transition;
+  focus:text-Very-Dark-Violet active:outline-Very-Dark-Violet transition uppercase;
 }
 
