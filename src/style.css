@@ -12,12 +12,12 @@
   --color-Very-Dark-Violet: hsl(270, 9%, 17%);
   --color-Dark-Grayish-Violet: hsl(273, 4%, 51%);
   --color-Very-Light-Gray: hsl(0, 0%, 98%);
+  --color-footer-gray: rgb(250, 250, 250);
 
   /*layout*/
 
   --breakpoint-2xl: 90rem;
 }
-
 
 /*CUSTOM CLASSES FOR ELEMENTS */
 
@@ -34,3 +34,8 @@
   focus:text-Very-Dark-Violet active:outline-Very-Dark-Violet transition uppercase;
 }
 
+ul li > a {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
