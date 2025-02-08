@@ -162,7 +162,8 @@ html {
 }
 
 .animation-fade-out {
-  animation: fadeOut linear;
+  animation: fadeOut ease-in-out;
   animation-timeline: view();
   animation-range: exit 200px;
+  animation-fill-mode: forwards; /*eliminated flicering*/
 }
