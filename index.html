@@ -1,294 +1,288 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-    <link href="/src/style.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <!--START---------------------------------------------------------->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <link href="/src/style.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet" />
+    <script src="app.js" defer></script>
+</head>
 
-  <body class="bg-white font-karla overflow-x-hidden">
-    <header class="px-6 bg-Very-Light-Gray relative z-30" id="header">
-      <div
-        class="container mx-auto h-18 md flex flex-row items-center justify-between"
-      >
-        <div class="">
-          <img src="/public/images/logo.svg" alt="logo" />
+<!--START---------------------------------------------------------->
+
+<body class="bg-white font-karla overflow-x-hidden">
+  <header class="px-6 bg-Very-Light-Gray relative z-30" id="header">
+    <div class="container mx-auto h-18 md flex flex-row items-center justify-between">
+      <div class="">
+        <img src="/public/images/logo.svg" alt="logo" />
+      </div>
+      <nav>
+        <div class="block sm:hidden">
+          <div id="hamburger" class=""><img src="/public/images/icon-hamburger.svg" alt="hamburger" ></div>
+          <div id="close" class="hidden"><img src="/public/images/icon-close.svg" alt="close"></div>
+          
         </div>
-        <nav>
-          <ul
-            class="flex flex-row items-center justify-between gap-3.5 font-bold"
-          >
-            <li class="cursor-pointer">
-              <a class="nav-links" href="/#">How we work</a>
+
+
+        <!--Mobile Nav-->
+        <ul class="hidden absolute top-18 left-1/2 -translate-x-1/2
+         font-bold sm:hidden
+         w-[100%] h-[37rem] text-center bg-dark-violet
+          text-Very-Light-Gray p-8 rounded-lg bg-[url(/public/images/bg-pattern-mobile-nav.svg)]
+           bg-no-repeat bg-[100%_120%]" id="mobile-nav">
+
+
+          <li class="cursor-pointer mb-4">
+            <a class="nav-links-mobile" href="/#">How we work</a>
+          </li>
+          <li class="cursor-pointer mb-4">
+            <a class="nav-links-mobile" href="/#">Product</a>
+          </li>
+          <li class="cursor-pointer mb-4">
+            <a class="nav-links-mobile" href="/#">Company</a>
+          </li>
+          <li class="cursor-pointer mb-4">
+            <a class="nav-links-mobile" href="/#">Contact</a>
+          </li>
+        </ul>
+
+
+
+        <!--Desktop Nav-->
+        <ul class="flex-row items-center justify-between gap-3.5 font-bold hidden sm:flex">
+          <li class="cursor-pointer">
+            <a class="nav-links" href="/#">How we work</a>
+          </li>
+          <li class="cursor-pointer">
+            <a class="nav-links" href="/#">Product</a>
+          </li>
+          <li class="cursor-pointer">
+            <a class="nav-links" href="/#">Company</a>
+          </li>
+          <li class="cursor-pointer">
+            <a class="nav-links" href="/#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section>
+    <div class="mx-auto h-[60dvh] bg-dark-violet">
+      <div class="overflow-visible container mx-auto flex justify-between items-center">
+        <!--Background  gaphic 1-->
+        <span
+          class="absolute z-20 w-full h-full max-w-[2000px] bg-[url(/public/images/bg-pattern-intro-right-mobile.svg)] bg-no-repeat bg-[100%_20%] sm:bg-[url(/public/images/bg-pattern-intro-right-desktop.svg)]">
+        </span>
+        <!--Background  gaphic 1-->
+
+        <div class="text-white w-1/2">
+          <h1 class="2xl:text-7xl lg:text-6xl text-5xl text-white mb-8 font-DM">
+            Humanizing your insurance.
+          </h1>
+          <p class="mb-8 w-96">
+            Get your life insurance coverage easier and faster. We blend our
+            expertise and technology to help you find the plan that’s right
+            for you. Ensure you and your loved ones are protected.
+          </p>
+          <button class="button relative z-50">View plans</button>
+        </div>
+        <div class="ext-white w-[45%] z-10">
+          <img class="w-[100%] translate-y-20" src="/public/images/image-intro-desktop.jpg" alt="insurance" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECOND SECTION --------------------------------------------------------->
+
+  <section class="relative">
+
+    <!--Background  gaphic 2-->
+    <span
+      class="absolute z-20 w-full h-full max-w-[2000px] bg-no-repeat sm:bg-[url(/public/images/bg-pattern-intro-left-desktop.svg)] -translate-y-45"></span>
+    <!--Background  gaphic 2-->
+
+    <div class="h-112"></div>
+
+    <div class="min-h-dvh -mb-8">
+      <div class="container mx-auto">
+        <hr class="w-30 -translate-y-24 text-Dark-Grayish-Violet border-none h-[2px] bg-Dark-Grayish-Violet" />
+
+        <h2 class="2xl:text-7xl lg:text-6xl text-5xl text-Very-Dark-Violet mb-24 font-DM">
+          We're different
+        </h2>
+        <div class="grid grid-cols-1 gap-16 lg:grid-cols-[repeat(3,auto)]">
+          <div>
+            <div class="w-96">
+              <img class="mb-10" src="/images/icon-snappy-process.svg" alt="" />
+              <h3 class="text-4xl text-Very-Dark-Violet font-DM mb-4">
+                Snappy Process
+              </h3>
+              <p>
+                Our application process can be completed in minutes, not
+                hours. Don’t get stuck filling in tedious forms.
+              </p>
+            </div>
+          </div>
+          <div class="w-96">
+            <img class="mb-10" src="/images/icon-affordable-prices.svg" alt="" />
+            <h3 class="text-4xl text-Very-Dark-Violet font-DM mb-4">
+              Affordable Prices
+            </h3>
+            <p>
+              We don’t want you worrying about high monthly costs. Our prices
+              may be low, but we still offer the best coverage possible.
+            </p>
+          </div>
+          <div class="w-96">
+            <img class="mb-10" src="/images/icon-people-first.svg" alt="" />
+            <h3 class="text-4xl text-Very-Dark-Violet font-DM mb-4">
+              People First
+            </h3>
+            <p>
+              Our plans aren’t full of conditions and clauses to prevent
+              payouts. We make sure you’re covered when you need it.
+            </p>
+          </div>
+        </div>
+
+
+    <!--Section before footer-->    
+
+        <div
+          class="bg-dark-violet text-Very-Light-Gray mt-36 flex flex-col items-center
+           not-first-of-type:justify-center py-24 gap-3.5 text-center
+           h-[20rem] bg-[url(/public/images/bg-pattern-intro-right-desktop.svg)] 
+           bg-no-repeat bg-contain bg-[100%_50%] sm:flex sm:flex-row sm:items-center
+           sm:justify-between sm:gap-1.5 sm:bg-[100%_50%] sm:bg-auto">
+
+          <h3 class="text-5xl font-DM w-3/5 mx-24 text-balance sm:text-6xl">
+            Find out more about how we work
+          </h3>
+          <button class="w-[200px] button relative z-50 mx-24">
+            How we work
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--FOOOTER--------------------------------------------------->
+
+  <footer class="bg-footer-gray text-Very-Dark-Violet py-8 font-karla">
+    <div class="container mx-auto px-4 flex flex-col justify-between">
+      <div class="flex justify-between mb-12 py-16 md:mb-0 border-b-2">
+        <a href="#header" class="text-white font-bold text-xl mr-6">
+          <img src="/public/images/logo.svg" alt="logo" /></a>
+        <div class="flex space-x-4">
+          <a href="/" class="hover:text-Very-Dark-Violet text-Dark-Grayish-Violet">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+            </svg>
+          </a>
+          <a href="/" class="hover:text-Very-Dark-Violet text-Dark-Grayish-Violet">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+            </svg>
+          </a>
+          <a href="/" class="hover:text-Very-Dark-Violet text-Dark-Grayish-Violet">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12 0c-3.628 0-4.108.015-5.523.081-1.433.065-2.415.29-3.272.622-.874.337-1.612.874-2.338 1.6-.726.726-1.263 1.464-1.6 2.338-.332.857-.557 1.839-.622 3.272-.066 1.415-.081 1.895-.081 5.523s.015 4.108.081 5.523c.065 1.433.29 2.415.622 3.272.337.874.874 1.612 1.6 2.338.726.726 1.464 1.263 2.338 1.6.857.332 1.839.557 3.272.622 1.415.066 1.895.081 5.523.081s4.108-.015 5.523-.081c1.433-.065 2.415-.29 3.272-.622.874-.337 1.612-.874 2.338-1.6.726-.726 1.263-1.464 1.6-2.338.332-.857.557-1.839.622-3.272.066-1.415.081-1.895.081-5.523s-.015-4.108-.081-5.523c-.065-1.433-.29-2.415-.622-3.272-.337-.874-.874-1.612-1.6-2.338-.726-.726-1.464-1.263-2.338-1.6-.857-.332-1.839-.557-3.272-.622-1.415-.066-1.895-.081-5.523-.081zm-.011 1.011c3.574 0 3.999.014 5.413.079 1.306.059 2.014.276 2.487.458.626.243 1.072.534 1.541 1.003.469.469.76.915 1.003 1.541.182.473.399 1.181.458 2.487.065 1.414.079 1.839.079 5.413 0 3.574-.014 3.999-.079 5.413-.059 1.306-.276 2.014-.458 2.487-.243.626-.534 1.072-1.003 1.541-.469.469-.915.76-1.541 1.003-.473.182-1.181.399-2.487.458-1.415.065-1.839.079-5.413.079-3.574 0-3.999-.014-5.413-.079-1.306-.059-2.014-.276-2.487-.458-.626-.243-1.072-.534-1.541-1.003-.469-.469-.76-.915-1.003-1.541-.182-.473-.399-1.181-.458-2.487-.065-1.414-.079-1.839-.079-5.413 0-3.574.014-3.999.079-5.413.059-1.306.276-2.014.458-2.487.243-.626.534-1.072 1.003-1.541.469-.469.915-.76 1.541-1.003.473-.182 1.181-.399 2.487-.458 1.414-.065 1.839-.079 5.413-.079z" />
+              <path
+                d="M11.981 16.573c-2.58 0-4.645-2.066-4.645-4.573 0-2.507 2.065-4.573 4.645-4.573s4.645 2.066 4.645 4.573c0 2.507-2.065 4.573-4.645 4.573zm0-11.638c-3.879 0-7.023 3.144-7.023 7.065 0 3.92 3.144 7.065 7.023 7.065 3.879 0 7.023-3.145 7.023-7.065 0-3.921-3.144-7.065-7.023-7.065zm8.729-.403c0 .902-.729 1.631-1.629 1.631-.903 0-1.631-.729-1.631-1.631 0-.904.728-1.632 1.631-1.632.9 0 1.629.728 1.629 1.632z" />
+            </svg>
+          </a>
+          <a href="/" class="hover:text-Very-Dark-Violet text-Dark-Grayish-Violet">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+              <path fill="currentColor"
+                d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 01.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z" />
+            </svg>
+            <path
+              d="M12 0c-3.628 0-4.108.015-5.523.081-1.433.065-2.415.29-3.272.622-.874.337-1.612.874-2.338 1.6-.726.726-1.263 1.464-1.6 2.338-.332.857-.557 1.839-.622 3.272-.066 1.415-.081 1.895-.081 5.523s.015 4.108.081 5.523c.065 1.433.29 2.415.622 3.272.337.874.874 1.612 1.6 2.338.726.726 1.464 1.263 2.338 1.6.857.332 1.839.557 3.272.622 1.415.066 1.895.081 5.523.081s4.108-.015 5.523-.081c1.433-.065 2.415-.29 3.272-.622.874-.337 1.612-.874 2.338-1.6.726-.726 1.263-1.464 1.6-2.338.332-.857.557-1.839.622-3.272.066-1.415.081-1.895.081-5.523s-.015-4.108-.081-5.523c-.065-1.433-.29-2.415-.622-3.272-.337-.874-.874-1.612-1.6-2.338-.726-.726-1.464-1.263-2.338-1.6-.857-.332-1.839-.557-3.272-.622-1.415-.066-1.895-.081-5.523-.081zm-.011 1.011c3.574 0 3.999.014 5.413.079 1.306.059 2.014.276 2.487.458.626.243 1.072.534 1.541 1.003.469.469.76.915 1.003 1.541.182.473.399 1.181.458 2.487.065 1.414.079 1.839.079 5.413 0 3.574-.014 3.999-.079 5.413-.059 1.306-.276 2.014-.458 2.487-.243.626-.534 1.072-1.003 1.541-.469.469-.915.76-1.541 1.003-.473.182-1.181.399-2.487.458-1.415.065-1.839.079-5.413.079-3.574 0-3.999-.014-5.413-.079-1.306-.059-2.014-.276-2.487-.458-.626-.243-1.072-.534-1.541-1.003-.469-.469-.76-.915-1.003-1.541-.182-.473-.399-1.181-.458-2.487-.065-1.414-.079-1.839-.079-5.413 0-3.574.014-3.999.079-5.413.059-1.306.276-2.014.458-2.487.243-.626.534-1.072 1.003-1.541.469-.469.915-.76 1.541-1.003.473-.182 1.181-.399 2.487-.458 1.414-.065 1.839-.079 5.413-.079z" />
+            <path
+              d="M11.981 16.573c-2.58 0-4.645-2.066-4.645-4.573 0-2.507 2.065-4.573 4.645-4.573s4.645 2.066 4.645 4.573c0 2.507-2.065 4.573-4.645 4.573zm0-11.638c-3.879 0-7.023 3.144-7.023 7.065 0 3.92 3.144 7.065 7.023 7.065 3.879 0 7.023-3.145 7.023-7.065 0-3.921-3.144-7.065-7.023-7.065zm8.729-.403c0 .902-.729 1.631-1.629 1.631-.903 0-1.631-.729-1.631-1.631 0-.904.728-1.632 1.631-1.632.9 0 1.629.728 1.629 1.632z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-10">
+
+        <div class="mt-8">
+          <h4 class="text-Dark-Grayish-Violet font-medium mb-8">OUR COMPANY</h4>
+          <ul class="space-y-1">
+            <li>
+              <a href="/how-we-work" class="hover:border-b-1">How We Work</a>
             </li>
-            <li class="cursor-pointer">
-              <a class="nav-links" href="/#">Product</a>
+            <li>
+              <a href="/why-insure" class="hover:border-b-1">Why Insure</a>
             </li>
-            <li class="cursor-pointer">
-              <a class="nav-links" href="/#">Company</a>
+            <li>
+              <a href="/view-plans" class="hover:border-b-1">View Plans</a>
             </li>
-            <li class="cursor-pointer">
-              <a class="nav-links" href="/#">Contact</a>
+            <li>
+              <a href="/reviews" class="hover:border-b-1">Reviews</a>
             </li>
           </ul>
-        </nav>
-      </div>
-    </header>
+        </div>
 
-    <section>
-      <div class="mx-auto h-[60dvh] bg-dark-violet">
-        <div
-          class="overflow-visible container mx-auto flex justify-between items-center"
-        >
-          <!--Background  gaphic 1-->
-          <span
-            class="absolute z-20 w-full h-full max-w-[2000px] bg-[url(/public/images/bg-pattern-intro-right-mobile.svg)] bg-no-repeat bg-[100%_20%] sm:bg-[url(/public/images/bg-pattern-intro-right-desktop.svg)]"
-          >
-          </span>
-          <!--Background  gaphic 1-->
+        <div class="mt-8">
+          <h4 class="text-Dark-Grayish-Violet font-medium mb-8">HELP ME</h4>
+          <ul class="space-y-1">
+            <li><a href="/faq" class="hover:border-b-1">FAQ</a></li>
+            <li>
+              <a href="/terms-of-use" class="hover:border-b-1">Terms of Use</a>
+            </li>
+            <li>
+              <a href="/privacy-policy" class="hover:border-b-1">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="/cookies" class="hover:border-b-1">Cookies</a>
+            </li>
+          </ul>
+        </div>
 
-          <div class="text-white w-1/2">
-            <h1
-              class="2xl:text-7xl lg:text-6xl text-5xl text-white mb-8 font-DM"
-            >
-              Humanizing your insurance.
-            </h1>
-            <p class="mb-8 w-96">
-              Get your life insurance coverage easier and faster. We blend our
-              expertise and technology to help you find the plan that’s right
-              for you. Ensure you and your loved ones are protected.
-            </p>
-            <button class="button relative z-50">View plans</button>
-          </div>
-          <div class="ext-white w-[45%] z-10">
-            <img
-              class="w-[100%] translate-y-20"
-              src="/public/images/image-intro-desktop.jpg"
-              alt="insurance"
-            />
-          </div>
+        <div class="mt-8">
+          <h4 class="text-Dark-Grayish-Violet font-medium mb-8">CONTACT</h4>
+          <ul class="space-y-1">
+            <li><a href="/sales" class="hover:border-b-1">Sales</a></li>
+            <li>
+              <a href="/support" class="hover:border-b-1">Support</a>
+            </li>
+            <li>
+              <a href="/live-chat" class="hover:border-b-1">Live Chat</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mt-8">
+          <h4 class="text-Dark-Grayish-Violet font-medium mb-8">OTHERS</h4>
+          <ul class="space-y-1">
+            <li>
+              <a href="/careers" class="hover:border-b-1">Careers</a>
+            </li>
+            <li><a href="/press" class="hover:border-b-1">Press</a></li>
+            <li>
+              <a href="/licenses" class="hover:border-b-1">Licenses</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </section>
+    </div>
+  </footer>
+</body>
 
-    <!-- SECOND SECTION --------------------------------------------------------->
-
-    <section class="relative">
-      <span
-        class="absolute z-20 w-full h-full max-w-[2000px] bg-[url(/public/images/bg-pattern-intro-right-mobile.svg)] bg-no-repeat sm:bg-[url(/public/images/bg-pattern-intro-left-desktop.svg)] -translate-y-45"
-      ></span>
-
-      <div class="h-112"></div>
-
-      <div class="min-h-dvh -mb-8">
-        <div class="container mx-auto">
-          <hr
-            class="w-30 -translate-y-24 text-Dark-Grayish-Violet border-none h-[2px] bg-Dark-Grayish-Violet"
-          />
-
-          <h2
-            class="2xl:text-7xl lg:text-6xl text-5xl text-Very-Dark-Violet mb-24 font-DM"
-          >
-            We're different
-          </h2>
-          <div class="grid grid-cols-1 gap-16 lg:grid-cols-[repeat(3,auto)]">
-            <div>
-              <div class="w-96">
-                <img
-                  class="mb-10"
-                  src="/images/icon-snappy-process.svg"
-                  alt=""
-                />
-                <h3 class="text-4xl text-Very-Dark-Violet font-DM mb-4">
-                  Snappy Process
-                </h3>
-                <p>
-                  Our application process can be completed in minutes, not
-                  hours. Don’t get stuck filling in tedious forms.
-                </p>
-              </div>
-            </div>
-            <div class="w-96">
-              <img
-                class="mb-10"
-                src="/images/icon-affordable-prices.svg"
-                alt=""
-              />
-              <h3 class="text-4xl text-Very-Dark-Violet font-DM mb-4">
-                Affordable Prices
-              </h3>
-              <p>
-                We don’t want you worrying about high monthly costs. Our prices
-                may be low, but we still offer the best coverage possible.
-              </p>
-            </div>
-            <div class="w-96">
-              <img class="mb-10" src="/images/icon-people-first.svg" alt="" />
-              <h3 class="text-4xl text-Very-Dark-Violet font-DM mb-4">
-                People First
-              </h3>
-              <p>
-                Our plans aren’t full of conditions and clauses to prevent
-                payouts. We make sure you’re covered when you need it.
-              </p>
-            </div>
-          </div>
-          <div
-            class="bg-dark-violet text-Very-Light-Gray mt-36 h-[20rem] flex items-center justify-between bg-[url(/public/images/bg-pattern-intro-right-desktop.svg)] bg-no-repeat bg-[100%_50%]"
-          >
-            <h3 class="text-6xl font-DM w-3/5 mx-24 text-balance">
-              Find out more about how we work
-            </h3>
-            <button class="w-[200px] button relative z-50 mx-24">
-              How we work
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--FOOOTER--------------------------------------------------->
-
-    <footer class="bg-footer-gray text-Very-Dark-Violet py-8 font-karla">
-      <div class="container mx-auto px-4 flex flex-col justify-between">
-        <div class="flex justify-between mb-12 py-16 md:mb-0 border-b-2">
-          <a href="#header" class="text-white font-bold text-xl mr-6">
-            <img src="/public/images/logo.svg" alt="logo"
-          /></a>
-          <div class="flex space-x-4">
-            <a href="/" class="hover:text-Very-Dark-Violet text-Dark-Grayish-Violet">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
-                />
-              </svg>
-            </a>
-            <a href="/" class="hover:text-Very-Dark-Violet text-Dark-Grayish-Violet">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
-                />
-              </svg>
-            </a>
-            <a href="/" class="hover:text-Very-Dark-Violet text-Dark-Grayish-Violet">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M12 0c-3.628 0-4.108.015-5.523.081-1.433.065-2.415.29-3.272.622-.874.337-1.612.874-2.338 1.6-.726.726-1.263 1.464-1.6 2.338-.332.857-.557 1.839-.622 3.272-.066 1.415-.081 1.895-.081 5.523s.015 4.108.081 5.523c.065 1.433.29 2.415.622 3.272.337.874.874 1.612 1.6 2.338.726.726 1.464 1.263 2.338 1.6.857.332 1.839.557 3.272.622 1.415.066 1.895.081 5.523.081s4.108-.015 5.523-.081c1.433-.065 2.415-.29 3.272-.622.874-.337 1.612-.874 2.338-1.6.726-.726 1.263-1.464 1.6-2.338.332-.857.557-1.839.622-3.272.066-1.415.081-1.895.081-5.523s-.015-4.108-.081-5.523c-.065-1.433-.29-2.415-.622-3.272-.337-.874-.874-1.612-1.6-2.338-.726-.726-1.464-1.263-2.338-1.6-.857-.332-1.839-.557-3.272-.622-1.415-.066-1.895-.081-5.523-.081zm-.011 1.011c3.574 0 3.999.014 5.413.079 1.306.059 2.014.276 2.487.458.626.243 1.072.534 1.541 1.003.469.469.76.915 1.003 1.541.182.473.399 1.181.458 2.487.065 1.414.079 1.839.079 5.413 0 3.574-.014 3.999-.079 5.413-.059 1.306-.276 2.014-.458 2.487-.243.626-.534 1.072-1.003 1.541-.469.469-.915.76-1.541 1.003-.473.182-1.181.399-2.487.458-1.415.065-1.839.079-5.413.079-3.574 0-3.999-.014-5.413-.079-1.306-.059-2.014-.276-2.487-.458-.626-.243-1.072-.534-1.541-1.003-.469-.469-.76-.915-1.003-1.541-.182-.473-.399-1.181-.458-2.487-.065-1.414-.079-1.839-.079-5.413 0-3.574.014-3.999.079-5.413.059-1.306.276-2.014.458-2.487.243-.626.534-1.072 1.003-1.541.469-.469.915-.76 1.541-1.003.473-.182 1.181-.399 2.487-.458 1.414-.065 1.839-.079 5.413-.079z"
-                />
-                <path
-                  d="M11.981 16.573c-2.58 0-4.645-2.066-4.645-4.573 0-2.507 2.065-4.573 4.645-4.573s4.645 2.066 4.645 4.573c0 2.507-2.065 4.573-4.645 4.573zm0-11.638c-3.879 0-7.023 3.144-7.023 7.065 0 3.92 3.144 7.065 7.023 7.065 3.879 0 7.023-3.145 7.023-7.065 0-3.921-3.144-7.065-7.023-7.065zm8.729-.403c0 .902-.729 1.631-1.629 1.631-.903 0-1.631-.729-1.631-1.631 0-.904.728-1.632 1.631-1.632.9 0 1.629.728 1.629 1.632z"
-                />
-              </svg>
-            </a>
-            <a href="/" class="hover:text-Very-Dark-Violet text-Dark-Grayish-Violet">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path fill="currentColor" d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 01.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
-                <path
-                  d="M12 0c-3.628 0-4.108.015-5.523.081-1.433.065-2.415.29-3.272.622-.874.337-1.612.874-2.338 1.6-.726.726-1.263 1.464-1.6 2.338-.332.857-.557 1.839-.622 3.272-.066 1.415-.081 1.895-.081 5.523s.015 4.108.081 5.523c.065 1.433.29 2.415.622 3.272.337.874.874 1.612 1.6 2.338.726.726 1.464 1.263 2.338 1.6.857.332 1.839.557 3.272.622 1.415.066 1.895.081 5.523.081s4.108-.015 5.523-.081c1.433-.065 2.415-.29 3.272-.622.874-.337 1.612-.874 2.338-1.6.726-.726 1.263-1.464 1.6-2.338.332-.857.557-1.839.622-3.272.066-1.415.081-1.895.081-5.523s-.015-4.108-.081-5.523c-.065-1.433-.29-2.415-.622-3.272-.337-.874-.874-1.612-1.6-2.338-.726-.726-1.464-1.263-2.338-1.6-.857-.332-1.839-.557-3.272-.622-1.415-.066-1.895-.081-5.523-.081zm-.011 1.011c3.574 0 3.999.014 5.413.079 1.306.059 2.014.276 2.487.458.626.243 1.072.534 1.541 1.003.469.469.76.915 1.003 1.541.182.473.399 1.181.458 2.487.065 1.414.079 1.839.079 5.413 0 3.574-.014 3.999-.079 5.413-.059 1.306-.276 2.014-.458 2.487-.243.626-.534 1.072-1.003 1.541-.469.469-.915.76-1.541 1.003-.473.182-1.181.399-2.487.458-1.415.065-1.839.079-5.413.079-3.574 0-3.999-.014-5.413-.079-1.306-.059-2.014-.276-2.487-.458-.626-.243-1.072-.534-1.541-1.003-.469-.469-.76-.915-1.003-1.541-.182-.473-.399-1.181-.458-2.487-.065-1.414-.079-1.839-.079-5.413 0-3.574.014-3.999.079-5.413.059-1.306.276-2.014.458-2.487.243-.626.534-1.072 1.003-1.541.469-.469.915-.76 1.541-1.003.473-.182 1.181-.399 2.487-.458 1.414-.065 1.839-.079 5.413-.079z"
-                />
-                <path
-                  d="M11.981 16.573c-2.58 0-4.645-2.066-4.645-4.573 0-2.507 2.065-4.573 4.645-4.573s4.645 2.066 4.645 4.573c0 2.507-2.065 4.573-4.645 4.573zm0-11.638c-3.879 0-7.023 3.144-7.023 7.065 0 3.92 3.144 7.065 7.023 7.065 3.879 0 7.023-3.145 7.023-7.065 0-3.921-3.144-7.065-7.023-7.065zm8.729-.403c0 .902-.729 1.631-1.629 1.631-.903 0-1.631-.729-1.631-1.631 0-.904.728-1.632 1.631-1.632.9 0 1.629.728 1.629 1.632z"
-                />
-              </svg>
-            </a>
-          </div>
-        </div>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-10">
-
-          <div class="mt-8">
-            <h4 class="text-Dark-Grayish-Violet font-medium mb-8">OUR COMPANY</h4>
-            <ul class="space-y-1">
-              <li>
-                <a href="/how-we-work" class="hover:border-b-1">How We Work</a>
-              </li>
-              <li>
-                <a href="/why-insure" class="hover:border-b-1">Why Insure</a>
-              </li>
-              <li>
-                <a href="/view-plans" class="hover:border-b-1">View Plans</a>
-              </li>
-              <li>
-                <a href="/reviews" class="hover:border-b-1">Reviews</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="mt-8">
-            <h4 class="text-Dark-Grayish-Violet font-medium mb-8">HELP ME</h4>
-            <ul class="space-y-1">
-              <li><a href="/faq" class="hover:border-b-1">FAQ</a></li>
-              <li>
-                <a href="/terms-of-use" class="hover:border-b-1"
-                  >Terms of Use</a
-                >
-              </li>
-              <li>
-                <a href="/privacy-policy" class="hover:border-b-1"
-                  >Privacy Policy</a
-                >
-              </li>
-              <li>
-                <a href="/cookies" class="hover:border-b-1">Cookies</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="mt-8">
-            <h4 class="text-Dark-Grayish-Violet font-medium mb-8">CONTACT</h4>
-            <ul class="space-y-1">
-              <li><a href="/sales" class="hover:border-b-1">Sales</a></li>
-              <li>
-                <a href="/support" class="hover:border-b-1">Support</a>
-              </li>
-              <li>
-                <a href="/live-chat" class="hover:border-b-1">Live Chat</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="mt-8">
-            <h4 class="text-Dark-Grayish-Violet font-medium mb-8">OTHERS</h4>
-            <ul class="space-y-1">
-              <li>
-                <a href="/careers" class="hover:border-b-1">Careers</a>
-              </li>
-              <li><a href="/press" class="hover:border-b-1">Press</a></li>
-              <li>
-                <a href="/licenses" class="hover:border-b-1">Licenses</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </body>
 </html>

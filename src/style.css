@@ -1,6 +1,8 @@
 @import "tailwindcss";
 
 @theme {
+  /*fonts*/
+
   --font-karla: "Karla", serif;
   --font-DM: "DM Serif Display", serif;
 
@@ -30,6 +32,12 @@
 
 .nav-links {
   @apply py-2 px-2 hover:bg-Very-Dark-Violet hover:text-Very-Light-Gray
+  focus:outline-2 focus:bg-Very-Light-Gray
+  focus:text-Very-Dark-Violet active:outline-Very-Dark-Violet transition uppercase;
+}
+
+.nav-links-mobile {
+  @apply py-2 px-2 hover:text-Very-Dark-Violet hover:bg-Very-Light-Gray
   focus:outline-2 focus:bg-Very-Light-Gray
   focus:text-Very-Dark-Violet active:outline-Very-Dark-Violet transition uppercase;
 }
