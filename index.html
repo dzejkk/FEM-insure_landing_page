@@ -35,11 +35,11 @@
 
 
         <!--Mobile Nav-->
-        <ul class="hidden absolute top-18 left-1/2 -translate-x-1/2
+        <ul class="hidden fixed top-18 left-1/2 -translate-x-1/2
          font-bold sm:hidden
          w-[100%] h-[37rem] text-center bg-dark-violet
           text-Very-Light-Gray p-8 rounded-lg bg-[url(/public/images/bg-pattern-mobile-nav.svg)]
-           bg-no-repeat bg-[100%_120%]" id="mobile-nav">
+           bg-no-repeat bg-[100%_120%] z-50" id="mobile-nav">
 
 
           <li class="cursor-pointer mb-4">
@@ -77,6 +77,7 @@
     </div>
   </header>
 
+  <!-- FIRST SECTION --------------------------------------------------------->
   <section>
     <div class="mx-auto h-[60dvh] bg-dark-violet">
       <div class="overflow-visible container mx-auto flex justify-between items-center">
@@ -87,7 +88,7 @@
         <!--Background  gaphic 1-->
 
         <div class="text-white w-1/2">
-          <h1 class="2xl:text-7xl lg:text-6xl text-5xl text-white mb-8 font-DM">
+          <h1 class="2xl:text-7xl lg:text-6xl text-5xl text-white mb-8 font-DM animate-from-left">
             Humanizing your insurance.
           </h1>
           <p class="mb-8 w-96">
@@ -95,7 +96,7 @@
             expertise and technology to help you find the plan that’s right
             for you. Ensure you and your loved ones are protected.
           </p>
-          <button class="button relative z-50">View plans</button>
+          <button class="button relative z-20 animate-bounce">View plans</button>
         </div>
         <div class="ext-white w-[45%] z-10">
           <img class="w-[100%] translate-y-20" src="/public/images/image-intro-desktop.jpg" alt="insurance" />
@@ -119,12 +120,12 @@
       <div class="container mx-auto">
         <hr class="w-30 -translate-y-24 text-Dark-Grayish-Violet border-none h-[2px] bg-Dark-Grayish-Violet" />
 
-        <h2 class="2xl:text-7xl lg:text-6xl text-5xl text-Very-Dark-Violet mb-24 font-DM">
+        <h2 class="animation 2xl:text-7xl lg:text-6xl sm:text-left text-5xl text-center text-Very-Dark-Violet mb-24 font-DM">
           We're different
         </h2>
 
         <!--Grid of 3 cards-->
-        <div class="grid justify-items-center text-center grid-cols-1 gap-16 lg:grid-cols-[repeat(3,auto)] sm:place-content-start sm:text-left">
+        <div class="animation grid justify-items-center text-center grid-cols-1 gap-16 2xl:gap-28 sm:grid-cols-[repeat(3,auto)] sm:place-content-start sm:text-left">
           <div>
             <div class="w-96">
               <img class="mb-10 m-auto sm:ml-[0px]" src="/images/icon-snappy-process.svg" alt="" />

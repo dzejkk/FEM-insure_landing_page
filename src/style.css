@@ -19,6 +19,44 @@
   /*layout*/
 
   --breakpoint-2xl: 90rem;
+
+  /* ANIMATION */
+
+  --animate-fade-in: fadeIn 0.5s ease-in-out;
+  --animate-from-left: fromLeft 0.5s ease-in-out;
+  --animate-bounce: bounce 0.5s ease-in-out;
+
+  @keyframes fadeIn {
+    from {
+      scale: 0.7;
+      opacity: 0;
+    }
+    to {
+      scale: 1;
+      opacity: 1;
+    }
+  }
+
+  @keyframes fromLeft {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
 }
 
 /*CUSTOM CLASSES FOR ELEMENTS */
@@ -50,4 +88,11 @@ ul li > a {
 
 html {
   scroll-behavior: smooth;
+}
+
+.animation {
+  animation: fadeIn 0.5s ease-in-out;
+  animation-timeline: view();
+  animation-range-start: 50px;
+  animation-range-end: 500px;
 }
