@@ -24,7 +24,20 @@
 
   --animate-fade-in: fadeIn 0.5s ease-in-out;
   --animate-from-left: fromLeft 0.5s ease-in-out;
+  --animate-from-right: fromRight 0.8s ease-in-out;
   --animate-bounce: bounce 0.5s ease-in-out;
+  --animate-basic-fade-in: basicFadeIn 0.8s ease-in-out;
+  --animate-fade-out: fadeOut 0.5s linear;
+  --animate-wobble: wobble-hor-bottom 2.5s ease-in-out infinite;
+
+  @keyframes basicFadeIn {
+    from {
+      opacity: 0.1;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 
   @keyframes fadeIn {
     from {
@@ -39,9 +52,22 @@
 
   @keyframes fromLeft {
     from {
+      scale: 0.7;
       transform: translateX(-100%);
     }
     to {
+      scale: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes fromRight {
+    from {
+      scale: 0.7;
+      transform: translateX(+100%);
+    }
+    to {
+      scale: 1;
       transform: translateX(0);
     }
   }
@@ -55,6 +81,34 @@
     }
     100% {
       transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeOut {
+    to {
+      opacity: 0;
+    }
+  }
+
+  @keyframes wobble-hor-bottom {
+    0%,
+    100% {
+      transform: translateX(0%);
+    }
+    15% {
+      transform: translateX(-5px) rotate(-3deg);
+    }
+    30% {
+      transform: translateX(5px) rotate(3deg);
+    }
+    45% {
+      transform: translateX(-10px) rotate(-3.6deg);
+    }
+    60% {
+      transform: translateX(0px);
+    }
+    75% {
+      transform: translateX(0px);
     }
   }
 }
@@ -90,9 +144,25 @@ html {
   scroll-behavior: smooth;
 }
 
+/* ANIMATION CLASSES */
+
 .animation {
-  animation: fadeIn 0.5s ease-in-out;
+  animation: fadeIn 0.8s ease-in-out forwards;
   animation-timeline: view();
-  animation-range-start: 50px;
+  animation-range-start: 20px;
   animation-range-end: 500px;
+}
+
+.animation-left-arrive {
+  animation: fromLeft 1s forwards;
+  animation-timeline: view();
+  animation-timing-function: cubic-bezier(0.016, 0.794, 0.34, 1);
+  animation-range-start: 15px;
+  animation-range-end: 450px;
+}
+
+.animation-fade-out {
+  animation: fadeOut linear;
+  animation-timeline: view();
+  animation-range: exit 200px;
 }
